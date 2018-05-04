@@ -31,19 +31,14 @@ $ defaults write com.apple.dock workspaces-auto-swoosh -bool NO
 $ killall Dock
 ```
 
-## Finder
-- Preferences
-    - Change 'New Finder windows show:' to something other than 'All My Files' (which is a memory hog)
-- Toolbar
-    - Update to add path, new folder and delete
-- Sidebar
-    - Add home and code directory
-    - Remove shared and tags
-    - New finder window to open in the home directory
+## Display 
+- Check Scaled and choose the most confortable resolution
 
-## Menubar
-- Remove the display and Bluetooth icons
-- Change battery to show percentage symbols
+## Bluetooth
+- Check "Show Bluetooth in menu bar"
+
+## Audio
+- Check "Show volume in menu bar"
 
 ## Spotlight
 - Uncheck fonts, images, files etc.
@@ -54,47 +49,19 @@ $ killall Dock
 
 ## User Defaults
 - Enable repeating keys by pressing and holding down keys: `defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false` (and restart any app that you need to repeat keys in)
-- Change the default folder for screenshots
-    - Open the terminal and create the folder where you would like to store your screenshots: `mkdir /path/to/screenshots/`
-    - Then run the following command: `defaults write com.apple.screencapture location /path/to/screenshots/ && killall SystemUIServer`
 
-## How to write to NTFS on OS X Yosemite and El Capitan
+## Menu Bar
+- Change battery to show percentage
 
-### Install Homebrew and Homebrew Cask
-- Instructions [here](http://sourabhbajaj.com/mac-setup/Homebrew/README.html)
-
-### Update Homebrew formulae:
-
-    $ brew update
-
-### Install osxfuse
-- If you are on OS X 10.11 (El Capitan), install the (3.x.x) from https://github.com/osxfuse/osxfuse/releases.
-
-    $ brew cask install osxfuse
-
-### Install ntfs-3g
-
-    $ brew install homebrew/fuse/ntfs-3g
-
-### If you are on OS X 10.11 (El Capitan), temporary disable System Integrity Protection
-
- - **Reboot** and hold CMD+R to get in recovery mode
- - Open the terminal and type:
-
-    $ csrutil disable
-
- - **Reboot** normally
-
-### Create a symlink for mount_ntfs
-
-    $ sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.original
-    $ sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
-
-### If you are on OSX 10.11 (El Capitan), re-enable System Integrity Protection
- - **Reboot** and hold CMD+R to get in recovery mode
- - Open the terminal and type
-
-    $ csrutil enable
-
- - **Reboot** normally
- - Done
+## Finder (Finder App)
+- Preferences
+    - General
+        - Change 'New Finder windows show:' to something other than 'All My Files' (which is a memory hog)
+    - Sidebar
+        - Add home and code directory
+        - Remove shared and tags
+        - New finder window to open in the home directory
+    - Advanced 
+        - Check "Show all filename extensions"
+        - Check "Remove items from the Trash after 30 days"
+        - Change "When performing a search:" to "Search the Current Folder"
