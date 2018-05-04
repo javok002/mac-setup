@@ -7,19 +7,22 @@ If this is a new computer, there are a couple tweaks you could make to the Syste
 
 ## Users & Groups
 - Login Options -> Change fast switching user menu to Icon
-- Set up Password, Apple ID, Picture, etc.
 
 ## Trackpad
 - Point & Click
-    - Enable Tap to click with one finger
-    - Change Secondary click to right corner
-    - Uncheck three finger drag
+    - Check all
 - Scroll & Zoom
-    - Uncheck all apart from Zoom in and out
+    - Check all
+
+## Accessibility 
+- Mouse & Trackpad
+    - Trackpad Options
+        - Check "Enable dragging": three finger drag
 
 ## Dock
 - Visual settings
     - Change position to left and make the size of Icons small
+    - Activate magnification
 - Other settings
     - Remove workspace auto-switching by running the following command:
 
